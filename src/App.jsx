@@ -1,10 +1,12 @@
 import { useState } from 'react'
+import Quiz from './Components/Quiz'
+
 
 function App() {
 
   return (
     <>
-      <h1>Quiz Web Application with React stack</h1>
+      <Quiz></Quiz>
     </>
   )
 }

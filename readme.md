@@ -133,7 +133,7 @@ Project Link: [https://github.com/francescosave/quiz-app](https://github.com/fra
 [issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
 [issues-url]: https://github.com/francescosave/quiz-app/issues
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/francescosave/quiz-app/blob/main/LICENSE.txt
+[license-url]: https://github.com/francescosave/quiz-app/blob/main/license.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/francesco-saverio-ricci-64972b71/
 [product-screenshot]: images/screenshot.png

@@ -7,18 +7,21 @@ const Quiz = () => {
 
   let [index, setIndex] = useState(0);
   let [question, setQuestion] = useState(data[index]);
+  let [lock, setLock] = useState(false);
 
   const ceckAns = (e, ans) => {
 
+    if (!lock) {
+      if (question.ans === ans) {
+        e.target.classList.add("correct")
+        setLock(true);
+      } else {
+        e.target.classList.add("wrong")
+        setLock(true);
+      }
 
-    if (question.ans === ans) {
-      e.target.classList.add("correct")
-      setLock(true);
-    } else {
-      e.target.classList.add("wrong")
-      setLock(true);
+
     }
-
 
 
   }

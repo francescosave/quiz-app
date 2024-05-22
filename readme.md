@@ -101,7 +101,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-4. Run of your local machine.Visit http://localhost:5173/
+4. Run of your local machine.Visit http://localhost:5173/. (Your port may be different based on your configuration)
    ```sh
    npm run dev
    ```

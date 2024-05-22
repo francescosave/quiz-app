@@ -101,11 +101,10 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-4. Run of your local machine
+4. Run of your local machine.Visit http://localhost:5173/
    ```sh
    npm run dev
    ```
-   visit http://localhost:5173/
 5. Enter your API in `config.js`
    ```js
    const API_KEY = 'ENTER YOUR API';

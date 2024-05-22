@@ -1,7 +1,7 @@
 .container {
     width: 250px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 70px;
     background: white;
     color: #262626;
     display: flex;
@@ -10,4 +10,14 @@
     border-radius: 10px;
     padding: 40px 50px;
 
+}
+.container hr {
+    height: 2px;
+    border: none;
+    background: #707070;
+}
+
+.container h2 {
+    font-size: 27px;
+    font-weight: 500;
 }

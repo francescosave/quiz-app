@@ -42,6 +42,8 @@
     <a href="https://github.com/francescosave/quiz-app">View Demo</a>
     ·
     <a href="https://github.com/francescosave/quiz-app/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    ·
+    <a href="https://github.com/francescosave/quiz-app/issues">Issues List</a>
   </p>
 </div>
 

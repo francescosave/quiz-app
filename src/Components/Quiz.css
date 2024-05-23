@@ -2,8 +2,8 @@
     width: 250px;
     margin: auto;
     margin-top: 10px;
-    background: white;
-    color: #262626;
+    background: blue;
+    color: yellow;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -29,7 +29,7 @@
 .container ul li {
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 50px;
     padding-left: 15px;
     border: 1px solid #686868;
     border-radius: 8px;
@@ -43,7 +43,7 @@
     margin: auto;
     width: 250px;
     height: 65px;
-    background: #553f9a;
+    background: blue ;
     color: #fff;
     font-size: 25px;
     font-weight: 500;
@@ -57,11 +57,11 @@
 }
 
 .correct {
-    background-color: lightgreen;
+    background-color: orangered;
     border-color: green;
 }
 
 .wrong {
-    background-color: pink;
-    border-color: red;
+    background-color: red;
+    border-color: pink;
 }

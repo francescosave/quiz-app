@@ -64,6 +64,7 @@ const Quiz = () => {
           <button onClick={reset}>Reset</button>
         </> :
         <>
+          <div className="index">{index + 1}/{data.length} questions</div>
           <h2>{index + 1}.{question.question}</h2>
           <ul>
             <li ref={option1} onClick={(e) => { ceckAns(e, 1) }}>{question.option1}</li>
@@ -72,7 +73,6 @@ const Quiz = () => {
             <li ref={option4} onClick={(e) => { ceckAns(e, 4) }}>{question.option4}</li>
           </ul>
           <button onClick={next}>Next</button>
-          <div className="index">{index + 1} of {data.length} questions</div>
         </>
       }
     </div>

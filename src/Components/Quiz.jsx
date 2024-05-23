@@ -13,6 +13,8 @@ const Quiz = () => {
   let option3 = useRef(null);
   let option4 = useRef(null);
   let option_array = [option1, option2, option3, option4];
+  let [score, setScore] = useState(0);
+  let [result, setResult] = useState(false);
 
 
   const ceckAns = (e, ans) => {
@@ -30,6 +32,10 @@ const Quiz = () => {
 
   const next = () => {
     if (lock) {
+      if (index === data.length - 1) {
+        setResult(true);
+        return 0;
+      }
       setIndex(++index);
       setQuestion(data[index]);
       setLock(false);
@@ -45,15 +51,19 @@ const Quiz = () => {
     <div className='container'>
       <h1>Quiz App</h1>
       <hr />
-      <h2>{index + 1}.{question.question}</h2>
-      <ul>
-        <li ref={option1} onClick={(e) => { ceckAns(e, 1) }}>{question.option1}</li>
-        <li ref={option2} onClick={(e) => { ceckAns(e, 2) }}>{question.option2}</li>
-        <li ref={option3} onClick={(e) => { ceckAns(e, 3) }}>{question.option3}</li>
-        <li ref={option4} onClick={(e) => { ceckAns(e, 4) }}>{question.option4}</li>
-      </ul>
-      <button onClick={next}>Next</button>
-      <div className="index">{index + 1} of {data.length} questions</div>
+      {result ? <></> :
+        <>
+          <h2>{index + 1}.{question.question}</h2>
+          <ul>
+            <li ref={option1} onClick={(e) => { ceckAns(e, 1) }}>{question.option1}</li>
+            <li ref={option2} onClick={(e) => { ceckAns(e, 2) }}>{question.option2}</li>
+            <li ref={option3} onClick={(e) => { ceckAns(e, 3) }}>{question.option3}</li>
+            <li ref={option4} onClick={(e) => { ceckAns(e, 4) }}>{question.option4}</li>
+          </ul>
+          <button onClick={next}>Next</button>
+          <div className="index">{index + 1} of {data.length} questions</div>
+        </>
+      }
     </div>
   )
 }

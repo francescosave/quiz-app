@@ -47,11 +47,22 @@ const Quiz = () => {
     }
   }
 
+  const reset = () => {
+    setIndex(0);
+    setQuestion(data[0]);
+    setScore(0);
+    setLock(false);
+    setResult(false);S
+  }
+
   return (
     <div className='container'>
       <h1>Quiz App</h1>
       <hr />
-      {result ? <></> :
+      {result ? 
+        <><h2>You scored {score} of out {data.length}</h2>
+          <button onClick={reset}>Reset</button>
+        </> :
         <>
           <h2>{index + 1}.{question.question}</h2>
           <ul>

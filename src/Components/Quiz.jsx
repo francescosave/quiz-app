@@ -18,12 +18,12 @@ const Quiz = () => {
   const ceckAns = (e, ans) => {
     if (!lock) {
       if (question.ans === ans) {
-        e.target.classList.add("correct")
+        e.target.classList.add("correct");
         setLock(true);
       } else {
-        e.target.classList.add("wrong")
+        e.target.classList.add("wrong");
         setLock(true);
-        option_array[question.ans - 1].current.classList.add('correct');
+        option_array[question.ans - 1].current.classList.add("correct");
       }
     }
   }
@@ -34,9 +34,9 @@ const Quiz = () => {
       setQuestion(data[index]);
       setLock(false);
       option_array.map((optio) => {
-          optio.current.classList.remove("wrong");
-          optio.current.classList.remove("correct");
-          return null;
+        optio.current.classList.remove("wrong");
+        optio.current.classList.remove("correct");
+        return null;
       });
     }
   }

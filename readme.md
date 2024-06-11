@@ -39,7 +39,7 @@
     <a href="https://github.com/francescosave/quiz-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/francescosave/quiz-app">View Demo</a>
+    <a href="https://quiz-nrm1lbp3b-francescosaves-projects.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/francescosave/quiz-app/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
     ·
